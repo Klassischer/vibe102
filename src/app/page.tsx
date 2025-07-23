@@ -25,6 +25,42 @@ export default function Home() {
           </li>
         </ol>
 
+        {/* DEMO SECTION FOR COLOR SCHEME */}
+        <section
+          style={{
+            background: "var(--color-bg)",
+            color: "var(--color-text)",
+            border: "2px solid var(--color-primary)",
+            borderRadius: 12,
+            padding: 24,
+            marginTop: 24,
+            minWidth: 320,
+            textAlign: "center",
+          }}
+        >
+          <h2 style={{ color: "var(--color-primary)", fontWeight: 700, fontSize: 24 }}>
+            Color Scheme Demo
+          </h2>
+          <p style={{ margin: "16px 0" }}>
+            The background, text, and border colors of this box change with the selected color scheme.
+          </p>
+          <button
+            style={{
+              background: "var(--color-primary)",
+              color: "#fff",
+              border: "none",
+              borderRadius: 8,
+              padding: "10px 24px",
+              fontWeight: 600,
+              fontSize: 16,
+              cursor: "pointer",
+            }}
+          >
+            Primary Action
+          </button>
+        </section>
+        {/* END DEMO SECTION */}
+
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
